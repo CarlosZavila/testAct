@@ -15,5 +15,5 @@ jobs:
       - name: Publicar artefacto HTML
         uses: actions/upload-artifact@v2
         with:
-          name: HTML-Artifact
+          name: HTML
           path: .

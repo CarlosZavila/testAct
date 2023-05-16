@@ -17,7 +17,7 @@ jobs:
       - name: Descargar artefacto HTML
         uses: actions/download-artifact@v2
         with:
-          name: HTML-Artifact
+          name: HTML
           path: .
 
       # Aquí puedes agregar pasos adicionales para implementar el artefacto en tu entorno de producción
