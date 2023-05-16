@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout del código fuente
+        uses: actions/checkout@v2
+      
+      - name: Publicar artefacto HTML
+        uses: actions/upload-artifact@v2
+        with:
+          name: HTML-Artifact
+          path: .
